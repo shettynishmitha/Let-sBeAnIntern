@@ -1,0 +1,134 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.courses
+{
+    /* margin:100px; */
+    margin-left: 0px;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #f5f3f5 0%, #d6e5f0 74%);
+
+}
+.courses > h1 {
+  padding-top:50px;
+  font-family: 'Satisfy', cursive;
+  text-decoration: underline;
+  text-align:center;
+  
+}
+#cmain{
+  display:flex;
+}
+
+#cright{
+  /* display:flex; */
+  width:60%;
+  background:lightgrey;
+  height:250px;
+  text-align:left;
+  color:white;
+  font-weight:bold;
+  font-size:20px;
+  padding:10px;
+  border:black solid 2px;
+  margin-left:14%;
+  margin-top:5%;
+  
+
+  /* /* text-decoration: none; */
+} 
+#cimage1{
+  width:100%;
+
+  background-size:cover;
+  height:100px;
+}
+#ctext1{
+  width:100%;
+
+  background:lightgrey;
+  height:120px;
+
+}
+.coursename{
+  font-family: 'Pacifico', cursive;
+  color:black;
+  text-align:center;
+  padding-top:10px;
+}
+.coursetooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.coursetooltip .coursetooltiptext {
+  visibility: hidden;
+  width: 220px;
+  word-wrap:break-word;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.coursetooltip:hover .coursetooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=submit] {
+  width: 45%;
+  background-color: rgb(241, 245, 241);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset] {
+  width: 45%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #e9fbea;
+}
+input[type=reset]:hover {
+  background-color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
